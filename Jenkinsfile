@@ -9,7 +9,7 @@ pipeline {
    
    	stage('Deploy to QA'){
    			steps{
-   				bat "mvn deploy"
+   				bat "mvn clean deploy"
    			}
    	
    	

@@ -42,6 +42,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+  			<groupId>com.mindtree</groupId>
+ 			 <artifactId>CrudProject</artifactId>
+ 			 <version>0.0.1-20221130.100540-1</version>
+			</dependency>
 	</dependencies>
 
 	<build>
