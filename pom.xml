@@ -66,7 +66,7 @@
                 <goal>deploy-file</goal>
             </goals>
             <configuration>
-                <file>CrudProject-0.0.1-20221130.100540-1</file>
+                <file>CrudProject-0.0.1-20221130.100540-1.jar</file>
                 <url>http:localhost:8081/repository/java-app/</url>
                 <groupId>com.mindtree</groupId>
                 <artifactId>CrudProject</artifactId>
