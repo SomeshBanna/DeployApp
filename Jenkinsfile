@@ -9,7 +9,7 @@ pipeline {
    
    	stage('Deploy to QA'){
    			steps{
-   				bat "mvn deploy:deploy-file -Durl=https://localhost:8081/repository/java-app/ -Dfile=com/mindtree/CrudProject/0.0.1-SNAPSHOT/CrudProject-0.0.1-20221130.100540-1.jar -DgroupId=com.mindtree -DartifactId=CrudProject -Dpackaging=jar -Dversion=0.0.1-20221130.100540-1 -DrepositoryId=Somesh"
+   				bat "mvn deploy:deploy-file -Durl=https://localhost:8081/repository/java-app/ -Dfile=C:\Users\Admin\Downloads -DgroupId=com.mindtree -DartifactId=CrudProject -Dpackaging=jar -Dversion=0.0.1-20221130.100540-1 -DrepositoryId=Somesh"
    			}
    	
    	
