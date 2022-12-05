@@ -9,11 +9,11 @@ pipeline {
    stages{
    	
    	stage('Upstream job'){
-   		
+   		parallel{
    			triggers {
     	upstream 'CrudPipeline, '
     }
-   
+   }
    }
    
    	stage('Deploy to QA'){
