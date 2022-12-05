@@ -1,15 +1,20 @@
 pipeline {
   agent {label 'QA environment'}
-  triggers {
-    	upstream 'CrudPipeline, '
-    }
-   
+  
   tools {
         // Install the Maven version configured as "M3" and add it to the path.
         maven "MAVEN_HOME"
     }
     
    stages{
+   	
+   	stage('Upstream job'){
+   		steps {
+   			triggers {
+    	upstream 'CrudPipeline, '
+    }
+   }
+   }
    
    	stage('Deploy to QA'){
    			steps{
