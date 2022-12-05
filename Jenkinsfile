@@ -9,11 +9,11 @@ pipeline {
    stages{
    	
    	stage('Upstream job'){
-   		steps {
+   		
    			triggers {
     	upstream 'CrudPipeline, '
     }
-   }
+   
    }
    
    	stage('Deploy to QA'){
