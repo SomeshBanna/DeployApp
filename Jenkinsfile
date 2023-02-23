@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'QA environment'}
+  agent {label 'QA ENVIRONMENT'}
   	triggers{
   		cron('0 10 * * *')
   		upstream(upstreamProjects:"CrudPipeline",threshold:hudson.model.Result.SUCCESS)
